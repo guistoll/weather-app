@@ -7,8 +7,6 @@ export default class DayDetails extends React.Component {
     const data = this.props.data;
     const dayDetails = this.props.dayDetails || {}; 
 
-    console.log(dayDetails);
-
     return (
       <div
         css={{
@@ -19,12 +17,11 @@ export default class DayDetails extends React.Component {
           padding: '20px 15px',
         }}
       >
-        <div css={{display: 'flex'}}>
+        <div css={{display: 'flex', fontSize: '16px'}}>
           <div css={{flex: '1'}}>
-            <p css={{fontSize: '16px', margin: '0'}}>{dayDetails.dayOfWeek}</p>
+            <p css={{margin: '0'}}>{dayDetails.dayOfWeek}</p>
             <p 
               css={{
-                fontSize: '16px',
                 margin: '0',
                 textTransform: 'capitalize',
               }}
@@ -53,12 +50,13 @@ export default class DayDetails extends React.Component {
                 >
                   {dayDetails.temp}
                 </p>
-                <span css={{float: 'left', marginTop: '6px', fontSize: '16px'}}>°C</span>
+                <span css={{float: 'left', marginTop: '6px'}}>°C</span>
               </div>
             </div>
           </div>
-          <div css={{flex: '1'}}>
-
+          <div css={{flex: '1', borderLeft: '1px solid #bababa', paddingLeft: '40px', margin: 'auto 0',}}>
+            <p>Humidity: <span>{dayDetails.humidity}%</span></p>
+            <p>Wind: <span>{dayDetails.wind} km/h</span></p>
           </div>
         </div>
       </div>

@@ -20,6 +20,8 @@ export default class WeekWeather extends React.Component {
           temp: '',
           icon: '',
           description: '',
+          humidity: '',
+          wind: '',
         },
       }],
     }

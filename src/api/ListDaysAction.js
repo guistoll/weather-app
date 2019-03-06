@@ -37,6 +37,8 @@ export default function daysList(cityID) {
           temp: Math.round(obj.main.temp),
           icon: iconUrl,
           description: obj.weather[0].description,
+          humidity: obj.main.humidity,
+          wind: Math.round(obj.wind.speed * 3.6),
         }
         days[dayOfWeek].details = dayDetails;
       }
