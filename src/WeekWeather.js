@@ -1,6 +1,4 @@
 import React from 'react';
-/** @jsx jsx */
-import { jsx } from '@emotion/core'
 import CityDetails from './CityDetails';
 import DayList from './DayList';
 import fetchDaysList from './api/ListDaysAction';

@@ -1,7 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, NavLink } from 'react-router-dom';
-/** @jsx jsx */
-import { jsx } from '@emotion/core'
 import DaysInfo from './DaysInfo';
 import DayDetails from './DayDetails';
 

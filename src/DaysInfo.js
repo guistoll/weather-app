@@ -1,7 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, NavLink } from 'react-router-dom';
-/** @jsx jsx */
-import { jsx } from '@emotion/core'
 
 export default class DaysInfo extends React.Component {
   render() {

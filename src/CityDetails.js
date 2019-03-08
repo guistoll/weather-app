@@ -1,6 +1,4 @@
 import React from 'react';
-/** @jsx jsx */
-import { jsx } from '@emotion/core'
 
 export default class CityDetails extends React.Component {
   render() {
